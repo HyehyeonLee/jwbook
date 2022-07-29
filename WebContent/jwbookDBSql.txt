@@ -1,0 +1,22 @@
+create table student(
+id int not null primary key auto_increment,
+username varchar(20),
+univ varchar(40),
+birth date,
+email varchar(40)
+);
+
+alter table student add(tel varchar(30) not null);
+alter table student alter username varchar(10);
+alter table student drop primary key;
+
+show columns from student;
+
+drop table student;
+select * from student;
+insert into student(username, univ, birth, email) values('김길동', 'AA대학교', '1999-10-21', 'kim@aa.com');
+
+insert into student(username, univ, birth, email) values('박사랑', 'BB대학교', '2000-01-21', 'park@bb.com');
+insert into student(username, univ, birth, email) values('나최고', 'CC대학교', '1998-07-11', 'na@cc.com');
+insert into student(username, univ, birth, email) values('김길동', 'BB대학교', '1999-03-10', 'kim@bb.com');
+insert into student(username, univ, birth, email) values('홍길동', 'AA대학교', '1999-12-10', 'hong@aa.com');
