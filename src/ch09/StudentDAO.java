@@ -42,6 +42,8 @@ public class StudentDAO {
 			pstmt.setString(2, s.getUniv());
 			pstmt.setDate(3, s.getBirth());
 			pstmt.setString(4, s.getEmail());
+			
+			pstmt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {

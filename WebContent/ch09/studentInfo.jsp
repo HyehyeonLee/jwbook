@@ -37,7 +37,8 @@
 		<label>대학</label>
 		<input type="text" name="univ" /><br />
 		<label>생일</label>
-		<input type="text" name="birth" /><br />
+		<input type="date" name="birth" id="" /><br />
+		<!-- <input type="text" name="birth" /><br /> -->
 		<label>이메일</label>
 		<input type="text" name="email" /><br />
 		<input type="submit" value="등록" />
