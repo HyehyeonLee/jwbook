@@ -1,3 +1,4 @@
+//ch09 SQL
 create table student(
 id int not null primary key auto_increment,
 username varchar(20),
@@ -20,3 +21,12 @@ insert into student(username, univ, birth, email) values('박사랑', 'BB대학�
 insert into student(username, univ, birth, email) values('나최고', 'CC대학교', '1998-07-11', 'na@cc.com');
 insert into student(username, univ, birth, email) values('김길동', 'BB대학교', '1999-03-10', 'kim@bb.com');
 insert into student(username, univ, birth, email) values('홍길동', 'AA대학교', '1999-12-10', 'hong@aa.com');
+
+//ch10 SQL
+CREATE TABLE news(
+aid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+title VARCHAR NOT NULL,
+img VARCHAR NOT NULL,
+date TIMESTAMP,
+content VARCHAR NOT NULL
+);
