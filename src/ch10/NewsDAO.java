@@ -33,7 +33,6 @@ public class NewsDAO {
 	//뉴스 추가 메서드
 	public void addNews(News n) throws SQLException {
 		Connection conn = open();
-		System.out.println(n.toString());
 		String sql = "INSERT INTO news(title, img, date, content) values(?,?,CURRENT_TIMESTAMP(),?)";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 
@@ -71,7 +70,6 @@ public class NewsDAO {
 	//뉴스 한 개를 클릭했을 때 세부 내용을 보여주는 메서드
 	public News getNews(int aid) throws SQLException {
 		Connection conn = open();
-		System.out.println("getNews 들어옴");
 		News n = new News();
 		String sql = "SELECT aid, title, img, FORMATDATETIME(date, 'yyyy-MM-dd HH:mm:ss') as cdate, content FROM news WHERE aid=?";
 
